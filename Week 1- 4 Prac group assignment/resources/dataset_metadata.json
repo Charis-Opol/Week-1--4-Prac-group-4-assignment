@@ -1,0 +1,59 @@
+{
+  "dataset_name": "Procedural Materials Classification Teaching Dataset",
+  "purpose": "Offline teaching/assessment only; not a real-world benchmark",
+  "target_classes": [
+    "plastic",
+    "paper",
+    "metal"
+  ],
+  "target_subtypes": {
+    "plastic": [
+      "bottle",
+      "cup"
+    ],
+    "paper": [
+      "sheet",
+      "carton"
+    ],
+    "metal": [
+      "can",
+      "cap"
+    ]
+  },
+  "common_train_counts": {
+    "plastic": 180,
+    "paper": 180,
+    "metal": 180
+  },
+  "common_val_counts": {
+    "plastic": 90,
+    "paper": 90,
+    "metal": 90
+  },
+  "group3_train_counts": {
+    "plastic": 180,
+    "paper": 180,
+    "metal": 45
+  },
+  "group4_train_counts": {
+    "plastic": 60,
+    "paper": 60,
+    "metal": 60
+  },
+  "group5_extra_candidates": 18,
+  "source_pretraining_classes": [
+    "bottle",
+    "cup",
+    "sheet",
+    "carton",
+    "can",
+    "cap"
+  ],
+  "source_pretraining_counts_per_class": {
+    "train": 220,
+    "val": 50
+  },
+  "seed": 20261001,
+  "image_size": 128,
+  "note": "Validation includes fixed stronger illumination variation to make robustness visible. Source pretraining labels six object subtypes; target task merges them into three material categories."
+}
