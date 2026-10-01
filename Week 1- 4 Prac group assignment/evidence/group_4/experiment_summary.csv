@@ -1,0 +1,4 @@
+experiment,trainable_params,key_change,accuracy,macro_f1,seconds
+baseline_cnn,23779,baseline,0.5740740740740741,0.5214606844811689,32.143366499993135
+controlled_intervention,23779,Weight Decay Regularisation,0.5222222222222223,0.44006809796631935,25.968420599994715
+transfer_resnet18_head,1539,cached source-pretrained backbone; new frozen-backbone head,0.8037037037037037,0.8072487535647719,12.97463539999444
